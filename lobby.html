@@ -2,18 +2,46 @@
 	<head>
 		<title>Lobby</title>
 	</head>
-	<body style="margin: 0 0;">
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<style>
+	.room {
+		opacity: 0.75;
+		cursor: pointer;
+		transform: translate(-50%,-50%);
+		position: absolute;
+		z-index: 1;
+	}
+	.room:hover {
+		opacity: 0.9;
+		transform: translate(-50%,-50%) scale(1.2);
+		filter: opacity(0.5) drop-shadow(0 0 0 blue);
+	}
+	</style>
+	<body style="margin: 0 0; overflow: hidden;">
 		<div>
-		<img src="https://images.locationscout.net/2019/12/the-natural-history-museum-lobby-united-kingdom.jpg?h=1100&q=83" width="100%" height="100%;" style="position:relative;">
+		<img src="bg.png" width="100%;" height="100%;" style="position:relative;">
+		<img src="Room 1.png" class="room"  style="top: 90%; left: 90%; width: 20%; height:28.5407982%;">
+		<img src="Room 2.png" class="room"  style="top: 76%; left: 74.7%; width: 8%; height: 30.8308204%;">
+		<img src="Room 3.png" class="room" style="top: 65%; left: 68%; width: 5%; height: 23.3388027%;">
+		<img src="Room 4.png" class="room"  style="top: 65%; left: 32.5%; width: 5%; height: 22.0898004%;">
+		<img src="Room 5.png" class="room"  style="top: 76%; left: 25.5%; width: 9%; height: 33.8241685%;">
+		<img src="Room 6.png" class="room"  style="top: 90%; left: 11%; width: 20%; height: 32.0503326%;">
 		</div>
-		<div class=canvas style="position: absolute; top: 50%; left: 50%;">
-		  <div class="triangle-left-border"></div>
-		  <div class="instruct-box">
-			<span>
-			  Hello
-			</span>
-		  </div>
-		  <div class="triangle-left"></div>
-		</div>
+		<script>
+		$(function () {
+
+  // in jQuery you can use: 
+  var h = $("img").height();
+  console.log('$("img").height() is: ' + h);
+  console.log('$("img").css("height") is: ' + $("img").css("height"));
+  
+
+  // in javascript, with the unit measure:
+  // This form corresponds to the second jQuery method
+  var elem = document.querySelectorAll('.room')[5];
+  var h1 = window.getComputedStyle(elem).height;
+  console.log('window.getComputedStyle(elem).height is: ' + h1);
+});
+		</script>
 	</body>
 </html>
