@@ -1,1 +1,39 @@
- 
+ <html>
+	<head>
+		<title>Room 1</title>
+		<style>
+			.inside {
+				margin: 0px 0px;
+				z-index: 3;
+				position: absolute;
+				transform: translate(-50%, -50%);
+			}
+			.button {
+				cursor: pointer;
+				top: 75%;
+				left: 50%;
+				color: white;
+				font-size: 30px;
+				padding: 5%;
+				border-radius: 10px;
+				border: 2px solid black;
+				background-color: #1C967A;
+			}
+			img {
+				z-index: 4;
+				position: absolute;
+				transform: translate(-50%, -50%);
+			}
+		</style>
+	</head>
+	<body style="margin: 0 0; background-image: url('Room 1 bg.png'); background-size: 100% 100%; overflow: hidden;">
+		<button class="inside button" style="font-size: 25px; top: 0.5%; left: 0.5%; padding: 0.25%; transform: translate(0%, 0%);" onclick="location.href='lobby.html'">Lobby</button>
+		<img src="TG Resolution.png" width="25%" style="top: 40%; left: 25%;">
+		<button class="inside button" style="font-size: 25px; top: 75%; left: 25%; padding: 0.25%; transform: translate(-50%, -50%);" onclick="location.href='Artifact 1.html'">Artifact 1</button>
+		<img src="Tinker Doc.png" width="25%" style="top: 35%; left: 80%;">
+		<button class="inside button" style="font-size: 25px; top: 60%; left: 80%; padding: 0.25%; transform: translate(-50%, -50%);" onclick="location.href='Artifact 2.html'">Artifact 2</button>
+		<div style="position:absolute; top: 100%; left: 0%; width: 0; height: 0; z-index: 2; border-bottom: 12vh solid rgba(0,0,0,0.4); border-right: 100vw solid transparent; transform: translate(0%,-100%);">
+		</div>
+		<p style="position:absolute; top: 95%; left: 3%; z-index: 3; margin: 0 0; font-size: 8vmin; font-family: Arial; transform: translate(-0%,-50%); color: white;">Room 1</p>
+	</body>
+ </html>
