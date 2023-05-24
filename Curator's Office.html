@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Curator's Office</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<style>
+			.inside {
+				margin: 0px 0px;
+				z-index: 3;
+				position: absolute;
+				transform: translate(-50%, -100%);
+			}
+			.button {
+				cursor: pointer;
+				top: 75%;
+				left: 50%;
+				color: white;
+				font-size: 30px;
+				padding: 5%;
+				border-radius: 10px;
+				border: 2px solid black;
+				background-color: #1C967A;
+			}
+			img {
+				z-index: 4;
+				position: absolute;
+				transform: translate(-50%, -50%);
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body style="background-image: url('Curator\'s Office bg.png'); background-size: 100% 100%; margin: 0 0; overflow: hidden;">
+		<img id="hola" src="Screen.png" onclick="location.href='Bio.html'" style="width: 50%; height: 41.9035847%; top: 32%; left: 50%;">
+		<div style="position:absolute; top: 100%; left: 0%; width: 0; height: 0; z-index: 2; border-bottom: 12vh solid rgba(0,0,0,0.4); border-right: 100vw solid transparent; transform: translate(0%,-100%);">
+		</div>
+		<p style="position:absolute; top: 95.4%; left: 1%; z-index: 3; margin: 0 0; font-size: 8vmin; font-family: Arial; transform: translate(-0%,-50%); color: white;">Curator's Office</p>
+		<button class="inside button" style="font-size: 30px; top: 95%; left: 95%; padding: 0.25%; transform: translate(-100%, -50%);" onclick="location.href='lobby.html'">Lobby</button>
+	</body>
+</html>
